@@ -1,0 +1,19 @@
+{
+  "info": {
+    "title": "iCareBase",
+    "version": "1.0.0"
+  },
+  "basePath": "/",
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "swagger": "2.0",
+  "paths": {},
+  "responses": {},
+  "parameters": {},
+  "tags": []
+}
