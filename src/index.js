@@ -5,9 +5,11 @@ const server = require('./server')
 
 const logger = require('./logger')
 
-server.listen(3000, async (err) => {
+const { PORT } = require('./config')
+
+server.listen(PORT, async (err) => {
   if (err) {
     return logger.error(err.message)
   }
-  logger.appStarted(3000, 'localhost')
+  logger.appStarted(PORT, 'localhost')
 })

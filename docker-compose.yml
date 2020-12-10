@@ -1,0 +1,14 @@
+version: '2'
+services:
+  security:
+    build: ./docker-service/node
+    ports:
+      - '8000:8080'
+    volumes: 
+      - .:/usr/src/app
+    depends_on:
+      - mysql_db
+  mysql_db: 
+    build: ./docker-service/mysql
+    ports:
+     - 3307:3306

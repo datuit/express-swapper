@@ -7,11 +7,12 @@ const {
   PASSWORD_DB,
   PORT_DB,
   USER_DB,
+  NAME_DB,
   dialect,
   pool,
 } = require('@config')
 
-const sequelize = new Sequelize(USER_DB, USER_DB, PASSWORD_DB, {
+const sequelize = new Sequelize(NAME_DB, USER_DB, PASSWORD_DB, {
   host: HOST_DB,
   dialect: dialect,
   operatorsAliases: false,
@@ -29,7 +30,7 @@ const con = mysql.createConnection({
   user: USER_DB,
   password: PASSWORD_DB,
   port: PORT_DB,
-  database: USER_DB,
+  database: NAME_DB,
 })
 
 con.connect(function (err) {
