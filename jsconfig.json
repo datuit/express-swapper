@@ -6,7 +6,9 @@
     "baseUrl": "src",
     "paths": {
       "@config": ["./config/index"],
-      "@config/*": ["./config/*"]
+      "@config/*": ["./config/*"],
+      "@services/*": ["./services/*"],
+      "@models/*": ["./models/*"]
     }
   },
   "exclude": ["node_modules"],

@@ -12,7 +12,34 @@
     }
   },
   "swagger": "2.0",
-  "paths": {},
+  "paths": {
+    "/api/v1/register": {
+      "post": {
+        "tags": ["FE_Authenticate"],
+        "summary": "Auth Register",
+        "description": "User Register",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "info",
+            "description": "user object",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "example": {
+              "username": "dat",
+              "password": "123456"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User Login"
+          }
+        }
+      }
+    }
+  },
   "responses": {},
   "parameters": {},
   "tags": []

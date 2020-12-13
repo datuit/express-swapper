@@ -5,7 +5,7 @@ Hey There! 🙌
 
 A boilerplate for [Node.js](https://nodejs.org/en) App.
 
-This boilerplate is built using [Express.js](https://expressjs.com/) web framework, and is using [Typescript Lang](https://www.typescriptlang.org/) for writing the app's logic.
+This boilerplate is built using [Express.js](https://expressjs.com/) web framework.
 
 Using [Docker](https://www.docker.com/) for services of boilerplate
 

@@ -15,7 +15,7 @@ const {
 const sequelize = new Sequelize(NAME_DB, USER_DB, PASSWORD_DB, {
   host: HOST_DB,
   dialect: dialect,
-  operatorsAliases: false,
+  operatorsAliases: 0,
 
   pool: {
     max: pool.max,
@@ -43,4 +43,4 @@ db.mysql = mysql
 db.sequelize = sequelize
 db.Sequelize = Sequelize
 
-module.exports = mysql
+module.exports = db
