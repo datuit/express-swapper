@@ -1,11 +1,8 @@
 const express = require('express')
-const router = express.Router()
-const db = require('@services/mysql')
-const bcrypt = require('bcrypt')
+const userRouter = require('./user')
 
-router.post('/register', async (req, res) => {
-  const user = await db.sequelize.models.users.create(req.body)
-  console.log(user)
-})
+const router = express.Router()
+
+router.use('/user', userRouter)
 
 module.exports = router

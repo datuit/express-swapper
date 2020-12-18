@@ -5,10 +5,13 @@
     "strict": true,
     "baseUrl": "src",
     "paths": {
-      "@config": ["./config/index"],
-      "@config/*": ["./config/*"],
-      "@services/*": ["./services/*"],
-      "@models/*": ["./models/*"]
+      "@api/*": ["./api/*"],
+      "@constants/*": ["./constants/*"],
+      "@controllers/*": ["./controllers/*"],
+      "@helpers/*": ["./helpers/*"],
+      "@middlewares/*": ["./middlewares/*"],
+      "@models/*": ["./models/*"],
+      "@services/*": ["./services/*"]
     }
   },
   "exclude": ["node_modules"],

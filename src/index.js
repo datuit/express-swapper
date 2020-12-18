@@ -5,7 +5,7 @@ const server = require('./server')
 
 const logger = require('./logger')
 
-const { PORT } = require('./config')
+const { PORT } = require('@constants/config')
 
 server.listen(PORT, async (err) => {
   if (err) {
